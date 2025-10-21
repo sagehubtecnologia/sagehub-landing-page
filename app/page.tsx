@@ -56,7 +56,7 @@ export default function SageHubLandingPage() {
           <Card className="bg-yellow border-4 border-foreground shadow-hard">
             <CardContent className="pt-6">
               <p className="text-lg leading-relaxed text-black">
-      Todos os dias, estudantes perdem horas preciosas navegando em um labirinto digital de informações desorganizadas. A 'caça ao tesouro' por materiais de estudo de qualidade em meio a fontes duvidosas e conteúdo de baixo valor não é apenas frustrante, é um desperdício de potencial que gera ansiedade e esgotamento. Cada hora gasta nessa busca infrutífera é uma hora a menos de estudo produtivo, um obstáculo real que compromete o sucesso acadêmico e profissional. Essa ineficiência sistêmica é um problema universal e silencioso que decidimos resolver de forma definitiva.
+  Todos os dias, estudantes perdem horas preciosas navegando em um labirinto digital de informações desorganizadas. A &apos;caça ao tesouro&apos; por materiais de estudo de qualidade em meio a fontes duvidosas e conteúdo de baixo valor não é apenas frustrante, é um desperdício de potencial que gera ansiedade e esgotamento. Cada hora gasta nessa busca infrutífera é uma hora a menos de estudo produtivo, um obstáculo real que compromete o sucesso acadêmico e profissional. Essa ineficiência sistêmica é um problema universal e silencioso que decidimos resolver de forma definitiva.
               </p>
             </CardContent>
           </Card>
