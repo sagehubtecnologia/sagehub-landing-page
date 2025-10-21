@@ -316,7 +316,7 @@ const FeatureCard = ({ icon, title, text1, text2, bgColor }: FeatureCardProps) =
   </Card>
 );
 
-const DifferentialCard = ({ icon, title, text, bgColor }) => (
+const DifferentialCard = ({ icon, title, text, bgColor }: DifferentialCardProps) => (
   <Card className={`${bgColor} border-4 border-foreground shadow-hard flex flex-col`}>
     <CardHeader>
       <div className="flex flex-col gap-3 text-black">
@@ -330,7 +330,7 @@ const DifferentialCard = ({ icon, title, text, bgColor }) => (
   </Card>
 );
 
-const StatCard = ({ icon, label, value, description, bgColor }) => (
+const StatCard = ({ icon, label, value, description, bgColor }: StatCardProps) => (
   <Card className={`${bgColor} border-4 border-foreground shadow-hard`}>
     <CardContent className="pt-6">
       <div className="flex flex-col items-center gap-2 text-center text-black">
@@ -343,7 +343,7 @@ const StatCard = ({ icon, label, value, description, bgColor }) => (
   </Card>
 );
 
-const TeamCard = ({ icon, name, role, bgColor }) => (
+const TeamCard = ({ icon, name, role, bgColor }: TeamCardProps) => (
   <Card className={`${bgColor} border-4 border-foreground shadow-hard`}>
     <CardContent className="pt-6">
       <div className="flex flex-col items-center gap-2 text-center text-black">
