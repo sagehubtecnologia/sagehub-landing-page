@@ -1,4 +1,5 @@
 // app/page.tsx
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -22,10 +23,15 @@ export default function SageHubLandingPage() {
     <main className="bg-background text-foreground">
       {/* --- Header Provisório --- */}
       <nav className="sticky top-0 z-10 flex items-center justify-between p-4 bg-background border-b-4 border-foreground">
-        <h1 className="text-2xl font-bold">SageHub</h1>
-        <Button className="bg-lime text-black shadow-hard hover:bg-lime/90">
-          Entre em contato e vamos conversar
-        </Button>
+        <div className="flex items-center gap-2"> {/* Adicionei um div para agrupar a logo e o texto */}
+          <Image
+            src="/logo.png" // Caminho da sua imagem na pasta public
+            alt="Logo SageHub"
+            width={40} // Ajuste a largura conforme necessário
+            height={40} // Ajuste a altura conforme necessário
+          />
+          <h1 className="text-2xl font-bold">SageHub</h1>
+        </div>
       </nav>
 
       <div className="flex flex-col gap-24 p-4 md:p-10 max-w-6xl mx-auto">
