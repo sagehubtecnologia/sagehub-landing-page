@@ -270,10 +270,38 @@ export default function SageHubLandingPage() {
   );
 }
 
-// --- Componentes Reutilizáveis (Estilo Tailwind/Shadcn) ---
-// (Você pode movê-los para seus próprios arquivos em /components)
+type FeatureCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  text1: string;
+  text2?: string; // text2 é opcional
+  bgColor: string;
+};
 
-const FeatureCard = ({ icon, title, text1, text2, bgColor }) => (
+type DifferentialCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  text: string;
+  bgColor: string;
+};
+
+type StatCardProps = {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  description: string;
+  bgColor: string;
+};
+
+type TeamCardProps = {
+  icon: React.ReactNode;
+  name: string;
+  role: string;
+  bgColor: string;
+};
+
+// ATUALIZE A LINHA DE DEFINIÇÃO DO COMPONENTE
+const FeatureCard = ({ icon, title, text1, text2, bgColor }: FeatureCardProps) => (
   <Card className={`w-full md:w-[calc(50%-1.5rem)] max-w-lg ${bgColor} border-4 border-foreground shadow-hard`}>
     <CardHeader>
       <div className="flex flex-col gap-3 text-black">
@@ -283,7 +311,7 @@ const FeatureCard = ({ icon, title, text1, text2, bgColor }) => (
     </CardHeader>
     <CardContent className="flex flex-col gap-2 text-black">
       <p>{text1}</p>
-      {text2 && <p>{text2}</p>}
+      {text2 && <p>{text2}</p>} {/* Esta linha já estava correta */}
     </CardContent>
   </Card>
 );
